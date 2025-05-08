@@ -1,0 +1,37 @@
+<div class="generator">
+    <h1>Password Generator</h1>
+    <div class="output">
+      <input type="text" id="password" readonly>
+      <button class="copy-btn">📋</button>
+      <link rel="stylesheet" href="styles.css">
+    </div>
+  
+    <div class="controls">
+      <label>
+        Character Length
+        <span id="length-value">15</span>
+      </label>
+      <input type="range" id="length" min="4" max="32" value="15" />
+  
+      <label><input type="checkbox" id="uppercase" checked> Include Uppercase Letters</label>
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase Letters</label>
+      <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+      <label><input type="checkbox" id="symbols" checked> Include Symbols</label>
+    </div>
+  
+    <div class="strength">
+      <span>Strength:</span>
+      <div class="bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <span id="strength-label">STRONG</span>
+    </div>
+  
+    <button class="generate-btn">Generate →</button>
+
+    <script src="app.js" defer></script>
+  </div>
+  
